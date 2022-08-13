@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <TargetWarningsAsErrors>true</TargetWarningsAsErrors>
+
+    <BaseOutputPath>$(MSBuildThisFileDirectory)/out/bin/$(MSBuildProjectName)</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)/out/obj/$(MSBuildProjectName)</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
