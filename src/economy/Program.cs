@@ -27,10 +27,8 @@ internal class Market
         this.seller = seller;
     }
 
-    public void Run()
-    {
+    public void Run() =>
         seller.BeginTransaction(buyer);
-    }
 }
 
 internal interface IParticipant
@@ -63,15 +61,11 @@ internal class Seller : ISeller, IParticipant, IOffer
     public Seller() =>
         (this as IParticipant).DayEnd();
 
-    void IParticipant.DayEnd()
-    {
+    void IParticipant.DayEnd() =>
         widgets = 100;
-    }
 
-    void ISeller.BeginTransaction(IBuyer buyer)
-    {
+    void ISeller.BeginTransaction(IBuyer buyer) =>
         buyer.MakeOffer(this);
-    }
 
     int IOffer.Price => 10;
 
