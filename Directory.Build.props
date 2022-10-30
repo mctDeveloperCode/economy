@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <Nullable>enable</Nullable>
-    <TargetWarningsAsErrors>true</TargetWarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 
     <BaseOutputPath>$(MSBuildThisFileDirectory)/out/bin/$(MSBuildProjectName)</BaseOutputPath>
     <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)/out/obj/$(MSBuildProjectName)</BaseIntermediateOutputPath>
